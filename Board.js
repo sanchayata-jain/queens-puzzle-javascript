@@ -1,0 +1,31 @@
+class Board {
+    constructor(size){
+       this.n = size;
+       this.pieces = Set(); 
+    }
+
+    size(){
+        return this.n;
+    }
+
+    admissiblePlacementFor(piece) {
+        for (let other in this.pieces) {
+            if (other != piece 
+                && other.attacks(piece) 
+                || piece.attacks(other)) {
+                    
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    add(piece) {
+        this.pieces.add(piece);
+    }
+
+    remove(piece) {
+        this.pieces.remove(piece);
+    }
+}
