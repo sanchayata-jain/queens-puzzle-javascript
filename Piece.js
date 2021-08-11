@@ -12,6 +12,56 @@ class Piece {
     }
 
     placeOn(board, i , j){
-        if ()
+        if (!this.isOnBoard()
+        && (0 <= i)
+        && (i < board.size())
+        && (0 <= j)
+        && (j < board.size()) ) {
+
+            this.board = board;
+            this.i = i;
+            this.j = j;
+            board.add();
+        }
     }
+
+    removeFromBoard() {
+        if (this.isOnBoard()) {
+            this.board.remove();
+            this.board = null;
+        }
+    }
+
+    attacks(piece) {
+        throw new Error(["An abstract method has been invoked"]);
+    }
+
+    isMindfulOf(piece) {
+        return ((piece != null)
+                && this.isOnBoard()
+                && piece.isOnBoard()
+                && this.board == piece.board
+                && this != piece);
+    }
+
+    rowIndex() {
+        if (this.isOnBoard()) {
+            return this.i;
+        }
+        else {
+            return this.UNKNOWN;
+        }
+    }
+
+    colIndex() {
+        if (this.isOnBoard()) {
+            return this.j;
+        }
+        else {
+            return this.UNKNOWN;
+        }
+    }
+
+    static UNKNOWN = -1;
 }
+
