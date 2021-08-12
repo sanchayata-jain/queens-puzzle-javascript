@@ -9,8 +9,8 @@ class Board {
     }
 
     admissiblePlacementFor(piece) {
-        for (let other in this.pieces) {
-            if (other != piece 
+        for (let other of this.pieces) {
+            if ((other != piece) 
                 && other.attacks(piece) 
                 || piece.attacks(other)) {
 
@@ -26,6 +26,8 @@ class Board {
     }
 
     remove(piece) {
-        this.pieces.remove(piece);
+        this.pieces.delete(piece);
     }
 }
+
+module.exports = {Board};

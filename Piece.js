@@ -21,13 +21,13 @@ class Piece {
             this.board = board;
             this.i = i;
             this.j = j;
-            board.add();
+            board.add(this);
         }
     }
 
     removeFromBoard() {
         if (this.isOnBoard()) {
-            this.board.remove();
+            this.board.remove(this);
             this.board = null;
         }
     }
@@ -65,3 +65,4 @@ class Piece {
     static UNKNOWN = -1;
 }
 
+module.exports = {Piece};
