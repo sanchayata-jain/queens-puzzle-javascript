@@ -1,7 +1,7 @@
 class Board {
     constructor(size){
        this.n = size;
-       this.pieces = Set(); 
+       this.pieces = new Set(); 
     }
 
     size(){
@@ -13,7 +13,7 @@ class Board {
             if (other != piece 
                 && other.attacks(piece) 
                 || piece.attacks(other)) {
-                    
+
                 return false;
             }
         }
