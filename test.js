@@ -27,4 +27,14 @@ test('test_board_ctor_infinity', ctor_inf_t => {
 	ctor_inf_t.assert(board.n === Infinity);
 })
 
+test('test_8_size', size_8_t => {
+	var board = new BoardFile.Board(8);
+	size_8_t.assert(board.size()) == 8;
+});
+
+test('test_1000_size', size_1000_t => {
+	var board = new BoardFile.Board(1000);
+	size_1000_t.assert(board.size()) == 1000;
+});
+
 
