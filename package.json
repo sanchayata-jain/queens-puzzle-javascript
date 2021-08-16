@@ -1,0 +1,22 @@
+{
+  "name": "queens_puzzle_javascript",
+  "version": "1.0.0",
+  "description": "A game called queens_puzzle which has been translated into javascript from python",
+  "main": "test.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanchayata-jain/queens_puzzle_javascript.git"
+  },
+  "author": "Sanchayata Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanchayata-jain/queens_puzzle_javascript/issues"
+  },
+  "homepage": "https://github.com/sanchayata-jain/queens_puzzle_javascript#readme",
+  "devDependencies": {
+    "ava": "^3.15.0"
+  }
+}
