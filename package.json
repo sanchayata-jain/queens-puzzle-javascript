@@ -2,7 +2,7 @@
   "name": "queens_puzzle_javascript",
   "version": "1.0.0",
   "description": "A game called queens_puzzle which has been translated into javascript from python",
-  "main": "test.js",
+  "main": "testBoard.js",
   "scripts": {
     "test": "ava"
   },
