@@ -54,12 +54,27 @@ test('test_remove', remove_t => {
 //  test('test_adminissiblePlacementFor_true', adminissiblePlacement_t => {
 // 	var board = new BoardFile.Board(3);
 // 	var piece1 = new PieceFile.Piece();
-// 	var mock = sinon.mock(piece1.attacks);
-// 	var expectation = mock.expects(false);
-// 	mock.verify();
+	
+// 	// var mock = sinon.mock(piece1.attacks);
+// 	// var expectation = mock.expects(false);
+// 	// mock.verify();
 	
 // });
 
+test('test_adminissiblePlacementFor_false1', test => {
+	let board = new BoardFile.Board(3);
+	let piece1 = new PieceFile.Piece();
+	
+	// piece1.attacks = sinon.mock(false);
+	// board.add(piece1);
+
+	// let piece2 = new PieceFile.Piece();
+	// piece2.attacks = sinon.mock(true);
+	// let actual = board.admissiblePlacementFor(piece2);
+
+	// test.assert(actual == false);
+
+});
 
 // const myFunction = sinon.spy();
 

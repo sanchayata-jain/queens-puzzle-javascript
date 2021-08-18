@@ -4,7 +4,7 @@
   "description": "A game called queens_puzzle which has been translated into javascript from python",
   "main": "testBoard.js",
   "scripts": {
-    "test": "ava"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/sanchayata-jain/queens_puzzle_javascript/issues"
   },
-  "homepage": "https://github.com/sanchayata-jain/queens_puzzle_javascript#readme",
-  "devDependencies": {
-    "ava": "^3.15.0"
-  }
+  "homepage": "https://github.com/sanchayata-jain/queens_puzzle_javascript#readme"
 }
